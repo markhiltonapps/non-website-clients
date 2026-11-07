@@ -1,0 +1,684 @@
+<!--
+  DESIGN & FACT-RESOLUTION NOTES:
+  1. Business Name vs. Review Spellings: Official business name is "Maveric Construction". Review #1 refers to "Maveric Roofing" and Review #3 refers to "Maverick Construction"; both are preserved verbatim inside their respective blockquotes as required, while "Maveric Construction" is used everywhere else.
+  2. Services Scope & Headline: The Google category is "Roofing contractor", while customer reviews also mention roof replacements, roof inspections, storm and water-damage repair, fences, and repairs and maintenance. The hero and services grid prioritize the customer-mentioned work first, followed by standard trade services (Roof inspections, Roof repair, Roof replacement, Storm and hail damage repair, Leak repair, Gutters) described in general terms with no unconfirmed promises.
+  3. Unconfirmed Details Omitted: Review #3 mentions a free roof inspection in the customer's own words, which is kept verbatim in the quote, but no site-wide promise of free inspections, warranties, licenses, years in business, or pricing is made outside the quote.
+-->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maveric Construction | Roofing &amp; Exterior Repair in Spring, TX</title>
+  <meta name="description" content="Maveric Construction provides roofing, roof replacement, roof inspections, storm and water-damage repair, fences, and general repairs in Spring, TX and nearby areas. Call (832) 281-4674." />
+
+  <!-- Google Fonts: Outfit (sturdy architectural display) & Plus Jakarta Sans (clean UI body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Outfit', 'system-ui', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            slate: {
+              850: '#161C24',
+              900: '#10141B',
+              950: '#0A0D12',
+            },
+            copper: {
+              50: '#FFF7ED',
+              100: '#FFEDD5',
+              500: '#EA580C',
+              600: '#C2410C',
+              700: '#9A3412',
+              800: '#7C2D12',
+            },
+            stone: {
+              50: '#FAF8F5',
+              100: '#F3EFEA',
+              200: '#E6E0D6',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    ::selection {
+      background-color: #C2410C;
+      color: #FAF8F5;
+    }
+    html {
+      font-variant-numeric: tabular-nums;
+      scrollbar-color: #C2410C #10141B;
+    }
+    /* Subtle architectural roof-grid pattern */
+    .arch-pattern {
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 text-slate-900 font-sans antialiased selection:bg-copper-600 selection:text-white">
+
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-copper-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold">
+    Skip to main content
+  </a>
+
+  <!-- Top Preview Banner -->
+  <aside aria-label="Website preview notice" class="bg-slate-950 text-stone-100 border-b border-white/10 text-xs sm:text-sm py-2.5 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <p class="leading-relaxed">
+        <span class="inline-block w-2 h-2 rounded-full bg-copper-500 mr-2 align-middle" aria-hidden="true"></span>
+        This is a custom preview built for <strong class="font-semibold text-white">Maveric Construction</strong>. Like it? Claim this website:
+        <span class="font-semibold text-copper-100">[YOUR NAME] · [YOUR PHONE] · [YOUR EMAIL]</span>
+      </p>
+      <a href="#claim-footer" class="shrink-0 text-copper-100 hover:text-white underline underline-offset-4 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-copper-500 rounded">
+        Details ↓
+      </a>
+    </div>
+  </aside>
+
+  <!-- Primary Header -->
+  <header class="sticky top-0 z-40 bg-stone-50/95 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <!-- Brand Identity -->
+      <a href="#" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-copper-600 rounded-lg" aria-label="Maveric Construction Home">
+        <span class="w-11 h-11 rounded-lg bg-slate-900 text-white flex items-center justify-center shadow-sm group-hover:bg-copper-600 transition-colors">
+          <!-- Architectural Roof Peak Icon -->
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 11L12 3l9 8" />
+            <path d="M6 10v10h12V10" />
+            <path d="M9 20v-5h6v5" />
+          </svg>
+        </span>
+        <div>
+          <span class="block font-display font-bold text-lg sm:text-xl tracking-tight text-slate-900 leading-none">
+            Maveric Construction
+          </span>
+          <span class="block text-xs font-medium text-slate-600 mt-1">
+            Spring, TX · Roofing Contractor
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation Links (Desktop) -->
+      <nav aria-label="Primary navigation" class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="#services" class="hover:text-copper-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-copper-600 rounded px-1 py-0.5">Services</a>
+        <a href="#reviews" class="hover:text-copper-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-copper-600 rounded px-1 py-0.5">Customer Reviews</a>
+        <a href="#find-us" class="hover:text-copper-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-copper-600 rounded px-1 py-0.5">Hours &amp; Location</a>
+      </nav>
+
+      <!-- Header Call CTA -->
+      <a
+        href="tel:+18322814674"
+        aria-label="Call Maveric Construction at (832) 281-4674"
+        class="inline-flex items-center gap-2 bg-copper-600 hover:bg-copper-700 active:bg-copper-800 text-white font-semibold text-sm sm:text-base px-4 sm:px-5 py-2.5 rounded-lg shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-copper-600"
+      >
+        <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        <span>(832) 281-4674</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 text-white arch-pattern overflow-hidden border-b border-slate-800">
+      <!-- Subtle radial warmth -->
+      <div class="pointer-events-none absolute -top-24 right-0 w-[34rem] h-[34rem] rounded-full bg-copper-600/15 blur-3xl" aria-hidden="true"></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          <!-- Hero Copy -->
+          <div class="lg:col-span-7 space-y-6">
+            <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.4rem] tracking-tight leading-[1.08] text-white">
+              Roofing, Storm Repair &amp; Exterior Work in Spring, TX
+            </h1>
+
+            <p class="text-lg sm:text-xl text-stone-200 max-w-2xl leading-relaxed font-normal">
+              Serving Spring, TX and nearby areas with roof replacement, roof inspections, storm and water-damage repair, fences, and general repairs and maintenance.
+            </p>
+
+            <!-- Primary CTA & Maps Action -->
+            <div class="pt-2 flex flex-col sm:flex-row sm:items-center gap-4">
+              <a
+                href="tel:+18322814674"
+                aria-label="Call Now: (832) 281-4674"
+                class="inline-flex items-center justify-center gap-3 bg-copper-600 hover:bg-copper-500 active:bg-copper-700 text-white font-display font-bold text-lg px-7 py-4 rounded-xl shadow-lg shadow-slate-950/50 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 focus-visible:ring-copper-500"
+              >
+                <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span>Call Now: (832) 281-4674</span>
+              </a>
+
+              <a
+                href="#services"
+                class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-stone-100 font-semibold text-base px-6 py-4 rounded-xl border border-white/15 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+              >
+                <span>View Services</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Fact-based Rating & Location Bar -->
+            <div class="pt-4 border-t border-white/10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-stone-200">
+              <div class="flex items-center gap-2">
+                <div class="flex items-center text-amber-400" aria-label="5.0 out of 5 stars">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                </div>
+                <span><strong class="text-white font-semibold">5.0 stars</strong> from 46 Google reviews</span>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-copper-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>2162 Spring Stuebner Rd, Spring, TX 77389</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Architectural Roof Graphic & Quick Fact Panel (No stock photos) -->
+          <div class="lg:col-span-5">
+            <div class="bg-slate-850 border border-white/10 rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+              <!-- Clean Geometric Roof Elevation SVG -->
+              <div class="mb-6 bg-slate-900/90 border border-white/10 rounded-xl p-6 flex items-center justify-center" aria-hidden="true">
+                <svg class="w-full max-w-[280px] h-auto" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Structural Grid Lines -->
+                  <line x1="20" y1="150" x2="300" y2="150" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 4" />
+                  <line x1="160" y1="20" x2="160" y2="150" stroke="#334155" stroke-width="1" stroke-dasharray="3 3" />
+                  <!-- Main Gable Roof Pitch -->
+                  <path d="M36 125L160 36L284 125" stroke="#EA580C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                  <!-- Secondary Dormer / Ridge Line -->
+                  <path d="M68 125L160 58L252 125" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <!-- Roof Truss Webbing -->
+                  <path d="M114 91L160 125L206 91" stroke="#475569" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="160" y1="58" x2="160" y2="125" stroke="#475569" stroke-width="1.75" />
+                  <!-- Base Fascia & Soffit -->
+                  <rect x="52" y="125" width="216" height="12" rx="2" fill="#1E293B" stroke="#64748B" stroke-width="1.5" />
+                  <!-- Shingle Course Accents -->
+                  <line x1="125" y1="62" x2="150" y2="62" stroke="#EA580C" stroke-width="2" stroke-linecap="round" />
+                  <line x1="170" y1="74" x2="202" y2="74" stroke="#EA580C" stroke-width="2" stroke-linecap="round" />
+                  <circle cx="160" cy="36" r="4.5" fill="#EA580C" />
+                </svg>
+              </div>
+
+              <!-- Key Business Facts Summary -->
+              <dl class="space-y-4 text-sm">
+                <div class="flex items-start justify-between gap-4 pb-3 border-b border-white/10">
+                  <dt class="text-stone-200 font-medium">Service Area</dt>
+                  <dd class="text-white font-semibold text-right">Spring, TX and nearby areas</dd>
+                </div>
+                <div class="flex items-start justify-between gap-4 pb-3 border-b border-white/10">
+                  <dt class="text-stone-200 font-medium">Hours (Mon–Fri)</dt>
+                  <dd class="text-white font-semibold text-right">8 AM–7 PM</dd>
+                </div>
+                <div class="flex items-start justify-between gap-4 pb-3 border-b border-white/10">
+                  <dt class="text-stone-200 font-medium">Hours (Sat / Sun)</dt>
+                  <dd class="text-white font-semibold text-right">Sat 9 AM–6 PM · Sun Closed</dd>
+                </div>
+                <div class="flex items-start justify-between gap-4">
+                  <dt class="text-stone-200 font-medium">Direct Phone</dt>
+                  <dd class="text-right">
+                    <a href="tel:+18322814674" class="text-copper-100 hover:text-white font-bold underline underline-offset-4">
+                      (832) 281-4674
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-24 bg-stone-50 border-b border-stone-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+            Roofing &amp; Exterior Services
+          </h2>
+          <p class="mt-3 text-base sm:text-lg text-slate-700 leading-relaxed">
+            Work customers highlight in their reviews, along with standard roofing and exterior services for properties in Spring, TX and nearby areas.
+          </p>
+        </div>
+
+        <!-- Group 1: Work Customers Mention in Their Reviews -->
+        <div class="mb-12">
+          <div class="flex items-center justify-between gap-4 mb-6 pb-2 border-b border-stone-200">
+            <h3 class="font-display font-bold text-xl text-slate-900">
+              Work Mentioned by Customers
+            </h3>
+            <span class="text-xs font-semibold uppercase tracking-wider text-copper-700 bg-copper-100 px-3 py-1 rounded-full">
+              Highlighted in Reviews
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- 1. Roofing -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="w-11 h-11 rounded-lg bg-copper-50 text-copper-600 flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 10.5 12 3l9 7.5" />
+                    <path d="M5 9v11h14V9" />
+                  </svg>
+                </div>
+                <h4 class="font-display font-bold text-lg text-slate-900">Roofing</h4>
+                <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                  Residential roofing work, including complete roof replacements and inspections for homeowners and home buyers.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2. Storm and water-damage repair -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="w-11 h-11 rounded-lg bg-copper-50 text-copper-600 flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+                    <path d="M16 14v6" />
+                    <path d="M8 14v6" />
+                    <path d="M12 16v6" />
+                  </svg>
+                </div>
+                <h4 class="font-display font-bold text-lg text-slate-900">Storm and Water-Damage Repair</h4>
+                <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                  Repair work addressing weather impacts and water-related exterior or roof issues.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3. Fences -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="w-11 h-11 rounded-lg bg-copper-50 text-copper-600 flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 3v18" />
+                    <path d="M12 3v18" />
+                    <path d="M20 3v18" />
+                    <path d="M2 8h20" />
+                    <path d="M2 16h20" />
+                  </svg>
+                </div>
+                <h4 class="font-display font-bold text-lg text-slate-900">Fences</h4>
+                <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                  Exterior fence work and related property repairs alongside roofing projects.
+                </p>
+              </div>
+            </div>
+
+            <!-- 4. Repairs and maintenance -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="w-11 h-11 rounded-lg bg-copper-50 text-copper-600 flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                  </svg>
+                </div>
+                <h4 class="font-display font-bold text-lg text-slate-900">Repairs and Maintenance</h4>
+                <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                  General exterior repairs and ongoing roof upkeep for properties in the Spring area.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 2: Typical Trade Services -->
+        <div>
+          <div class="flex items-center justify-between gap-4 mb-6 pb-2 border-b border-stone-200">
+            <h3 class="font-display font-bold text-xl text-slate-900">
+              Additional Roofing &amp; Trade Services
+            </h3>
+            <span class="text-xs font-medium text-slate-600 bg-stone-200/80 px-3 py-1 rounded-full">
+              Common Roofing Services
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- 5. Roof inspections -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex items-start gap-4">
+              <div class="w-10 h-10 shrink-0 rounded-lg bg-slate-900 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.3-4.3" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-base text-slate-900">Roof Inspections</h4>
+                <p class="mt-1 text-sm text-slate-600 leading-relaxed">
+                  Checking roof condition for homeowners or during the home buying process.
+                </p>
+              </div>
+            </div>
+
+            <!-- 6. Roof repair -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex items-start gap-4">
+              <div class="w-10 h-10 shrink-0 rounded-lg bg-slate-900 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m15 12-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9" />
+                  <path d="M17.64 15 22 10.64" />
+                  <path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-base text-slate-900">Roof Repair</h4>
+                <p class="mt-1 text-sm text-slate-600 leading-relaxed">
+                  Addressing damaged shingles, wear, and localized roofing issues.
+                </p>
+              </div>
+            </div>
+
+            <!-- 7. Roof replacement -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex items-start gap-4">
+              <div class="w-10 h-10 shrink-0 rounded-lg bg-slate-900 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 10.5 12 3l9 7.5" />
+                  <path d="M9 14l2 2 4-4" />
+                  <path d="M5 9.5V20h14V9.5" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-base text-slate-900">Roof Replacement</h4>
+                <p class="mt-1 text-sm text-slate-600 leading-relaxed">
+                  Full roof replacement installations when an existing roof needs to be replaced.
+                </p>
+              </div>
+            </div>
+
+            <!-- 8. Storm and hail damage repair -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex items-start gap-4">
+              <div class="w-10 h-10 shrink-0 rounded-lg bg-slate-900 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                  <path d="m13 11-4 6h6l-4 6" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-base text-slate-900">Storm and Hail Damage Repair</h4>
+                <p class="mt-1 text-sm text-slate-600 leading-relaxed">
+                  Evaluating and repairing roof surfaces affected by wind, hail, or severe weather.
+                </p>
+              </div>
+            </div>
+
+            <!-- 9. Leak repair -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex items-start gap-4">
+              <div class="w-10 h-10 shrink-0 rounded-lg bg-slate-900 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-base text-slate-900">Leak Repair</h4>
+                <p class="mt-1 text-sm text-slate-600 leading-relaxed">
+                  Locating and repairing active roof leaks and moisture intrusion points.
+                </p>
+              </div>
+            </div>
+
+            <!-- 10. Gutters -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm flex items-start gap-4">
+              <div class="w-10 h-10 shrink-0 rounded-lg bg-slate-900 text-white flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 6h18" />
+                  <path d="M5 6v4a3 3 0 0 0 3 3h10v8" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-base text-slate-900">Gutters</h4>
+                <p class="mt-1 text-sm text-slate-600 leading-relaxed">
+                  Roofline gutter work to help direct rainwater away from the structure.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call CTA below services -->
+          <div class="mt-10 bg-stone-100 border border-stone-200 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-slate-800 font-medium text-center sm:text-left">
+              Have a question about a specific roofing or exterior project in Spring, TX?
+            </p>
+            <a
+              href="tel:+18322814674"
+              aria-label="Call Maveric Construction at (832) 281-4674"
+              class="shrink-0 inline-flex items-center gap-2 bg-slate-900 hover:bg-copper-600 text-white font-semibold text-sm px-5 py-3 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-copper-600"
+            >
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>Call (832) 281-4674</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews / Social Proof Section -->
+    <section id="reviews" class="py-16 sm:py-24 bg-white border-b border-stone-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header + Overall Rating Badge -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+              What Customers Say on Google
+            </h2>
+            <p class="mt-2 text-base sm:text-lg text-slate-600">
+              Real Google reviews from local customers.
+            </p>
+          </div>
+
+          <div class="bg-stone-50 border border-stone-200 rounded-xl px-5 py-4 flex items-center gap-4 self-start md:self-auto">
+            <div class="text-3xl font-display font-extrabold text-slate-900 leading-none">
+              5.0
+            </div>
+            <div>
+              <div class="flex items-center text-amber-500" aria-label="5.0 stars">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <p class="text-xs font-semibold text-slate-700 mt-0.5">
+                5.0 stars · 46 Google reviews
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Verbatim Reviews Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Review 1 -->
+          <figure class="bg-stone-50 border border-stone-200 rounded-2xl p-7 flex flex-col justify-between shadow-sm">
+            <blockquote class="text-slate-800 text-base leading-relaxed">
+              “I recently had the pleasure of working with Maveric Roofing for a complete roof replacement, and I cannot recommend them enough! From start to finish, the entire experience was seamless and professional. The team was prompt, courteous, and extremely knowledgeable.”
+            </blockquote>
+            <figcaption class="mt-6 pt-4 border-t border-stone-200 text-sm font-semibold text-slate-900">
+              — Michael C., 5★, 2 years ago
+            </figcaption>
+          </figure>
+
+          <!-- Review 2 -->
+          <figure class="bg-stone-50 border border-stone-200 rounded-2xl p-7 flex flex-col justify-between shadow-sm">
+            <blockquote class="text-slate-800 text-base leading-relaxed">
+              “I recently had the pleasure of working with Maveric Construction for a roof replacement, and I can honestly say they live up to their word about treating customers like family. From the very first phone call, it was clear that they genuinely cared about my concerns and needs.”
+            </blockquote>
+            <figcaption class="mt-6 pt-4 border-t border-stone-200 text-sm font-semibold text-slate-900">
+              — Alejandra T., 5★, 2 years ago
+            </figcaption>
+          </figure>
+
+          <!-- Review 3 -->
+          <figure class="bg-stone-50 border border-stone-200 rounded-2xl p-7 flex flex-col justify-between shadow-sm">
+            <blockquote class="text-slate-800 text-base leading-relaxed">
+              “Called Maverick Construction for a roof inspection, which they did for free. Then they worked with us during our house buying process to insure the house we bought had a new roof that looks amazing.”
+            </blockquote>
+            <figcaption class="mt-6 pt-4 border-t border-stone-200 text-sm font-semibold text-slate-900">
+              — Nikki C., 5★, 2 years ago
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find Us Section -->
+    <section id="find-us" class="py-16 sm:py-24 bg-stone-100 border-b border-stone-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <!-- Address, Service Area & Actions -->
+          <div class="lg:col-span-7 space-y-6">
+            <h2 class="font-display font-bold text-3xl sm:text-4xl text-slate-900 tracking-tight">
+              Find Us
+            </h2>
+
+            <div class="bg-white border border-stone-200 rounded-2xl p-6 sm:p-8 shadow-sm space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 shrink-0 rounded-lg bg-copper-50 text-copper-600 flex items-center justify-center mt-0.5">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">Address</h3>
+                  <p class="mt-1 text-lg font-semibold text-slate-900">
+                    2162 Spring Stuebner Rd, Spring, TX 77389
+                  </p>
+                  <p class="mt-1 text-sm text-slate-600">
+                    Service area: Spring, TX and nearby areas
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 pt-5 border-t border-stone-200">
+                <div class="w-10 h-10 shrink-0 rounded-lg bg-copper-50 text-copper-600 flex items-center justify-center mt-0.5">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">Phone</h3>
+                  <p class="mt-1 text-lg font-semibold text-slate-900">
+                    <a href="tel:+18322814674" class="hover:text-copper-600 underline underline-offset-4">
+                      (832) 281-4674
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                <a
+                  href="tel:+18322814674"
+                  aria-label="Call Now: (832) 281-4674"
+                  class="inline-flex items-center justify-center gap-2 bg-copper-600 hover:bg-copper-700 text-white font-semibold px-6 py-3.5 rounded-xl transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-copper-600"
+                >
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  <span>Call Now: (832) 281-4674</span>
+                </a>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&amp;query=Maveric+Construction&amp;query_place_id=ChIJmfuS0lc1R4YRsyMth_j_mms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open Maveric Construction on Google Maps (opens in a new tab)"
+                  class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3.5 rounded-xl transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-slate-900"
+                >
+                  <span>View on Google Maps</span>
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours Card -->
+          <div class="lg:col-span-5">
+            <div class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 shadow-md">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-lg bg-copper-600 text-white flex items-center justify-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+                <h3 class="font-display font-bold text-2xl">Hours</h3>
+              </div>
+
+              <dl class="space-y-4 text-base">
+                <div class="flex items-center justify-between py-3 border-b border-white/10">
+                  <dt class="text-stone-200 font-medium">Monday – Friday</dt>
+                  <dd class="font-semibold text-white">8 AM–7 PM</dd>
+                </div>
+                <div class="flex items-center justify-between py-3 border-b border-white/10">
+                  <dt class="text-stone-200 font-medium">Saturday</dt>
+                  <dd class="font-semibold text-white">9 AM–6 PM</dd>
+                </div>
+                <div class="flex items-center justify-between py-3">
+                  <dt class="text-stone-200 font-medium">Sunday</dt>
+                  <dd class="font-semibold text-copper-100">Closed</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="claim-footer" class="bg-slate-950 text-stone-200 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <p class="font-display font-bold text-lg text-white">Maveric Construction</p>
+        <p class="text-sm text-stone-200 mt-1">
+          2162 Spring Stuebner Rd, Spring, TX 77389 ·
+          <a href="tel:+18322814674" class="underline underline-offset-4 hover:text-white">(832) 281-4674</a>
+        </p>
+      </div>
+
+      <div class="bg-slate-900 border border-white/10 rounded-xl px-5 py-4 text-sm text-center md:text-right">
+        <p class="text-stone-100">
+          This is a custom preview built for <strong class="font-semibold text-white">Maveric Construction</strong>.
+        </p>
+        <p class="mt-1 text-copper-100 font-semibold">
+          Like it? Claim this website: [YOUR NAME] · [YOUR PHONE] · [YOUR EMAIL]
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
